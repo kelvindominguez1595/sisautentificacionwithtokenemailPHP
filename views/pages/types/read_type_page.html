@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Proyecto DWEB-2021</title>
+
+  <!-- CSS  -->
+  <link href="../../css/icon.css" rel="stylesheet">
+  <link href="../../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="../../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  
+<!-- INICIO DEL MENÚ -->
+  <nav class="purple darken-4" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="../home_page.html">Inicio</a></li>
+        <li><a class='dropdown-trigger tooltipped' href="#" data-target='dropdown_registro' data-position="bottom" data-tooltip="Guardar información">Registro<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a class='dropdown-trigger tooltipped' href="#" data-target='dropdown_consultas' data-position="bottom" data-tooltip="Ver información">Consultas<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a class='dropdown-trigger tooltipped' href="#" data-target='dropdown_usuario' data-position="bottom" data-tooltip="Usuario activo"><i class="material-icons">account_circle</i></a></li>
+      </ul>
+
+      <!-- lista desplegable usuario -->
+      <ul id='dropdown_usuario' class='dropdown-content'>
+        <li><a href="../users/password_page.html"><i class="material-icons">vpn_key</i>Clave</a></li>
+        <li><a href="../users/create_user_page.html"><i class="material-icons">insert_drive_file</i>Nuevo</a></li>
+        
+        <li><a href="../users/update_user_page.html"><i class="material-icons">edit</i>Editar</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="../index.html"><i class="material-icons">exit_to_app</i>Salir</a></li>
+      </ul>
+      
+      <!-- lista desplegable consultas -->
+      <ul id='dropdown_consultas' class='dropdown-content'>
+        <li><a href="../types/read_type_page.html"><i class="material-icons">verified_user</i>Tipos</a></li>
+        <li><a href="../users/read_user_page.html"><i class="material-icons">account_circle</i>Usuarios</a></li>        
+      </ul>
+      
+      <!-- lista desplegable registro -->
+      <ul id='dropdown_registro' class='dropdown-content'>
+        <li><a href="../types/create_type_page.html"><i class="material-icons">verified_user</i>Tipos</a></li>
+        <li><a href="../users/create_user_page.html"><i class="material-icons">account_circle</i>Usuarios</a></li>        
+      </ul>
+
+      <!-- menú cell -->
+      <ul id="nav-mobile" class="sidenav blue-grey lighten-4">        
+        <li><a href="../home_page.html">Inicio</a></li>
+        <li><a class='dropdown-trigger tooltipped' href="#" data-target='dropdown_registro_movil' data-position="bottom" data-tooltip="Guardar información">Registro<i class="material-icons right">arrow_drop_down</i></a></li>
+
+        <li><a class='dropdown-trigger tooltipped' href="#" data-target='dropdown_consultas_movil' data-position="bottom" data-tooltip="Ver información">Consultas<i class="material-icons right">arrow_drop_down</i></a></li>
+
+        <li><a class='dropdown-trigger tooltipped' href="#" data-target='dropdown_usuario_movil' data-position="bottom" data-tooltip="Usuario activo"><i class="material-icons">account_circle</i><i class="material-icons right">arrow_drop_down</i></a></li>
+      </ul>
+
+      
+      <!-- lista desplegable usuario MOVIL -->
+      <ul id='dropdown_usuario_movil' class='dropdown-content'>
+        <li><a href="../users/password_page.html"><i class="material-icons">vpn_key</i>Clave</a></li>
+
+        <li><a href="../users/create_user_page.html"><i class="material-icons">insert_drive_file</i>Nuevo</a></li>
+        
+        <li><a href="../users/update_user_page.html"><i class="material-icons">edit</i>Editar</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="../index.html"><i class="material-icons">exit_to_app</i>Salir</a></li>
+      </ul>
+      
+      <!-- lista desplegable consultas MOVIL -->
+      <ul id='dropdown_consultas_movil' class='dropdown-content'>
+        <li><a href="../types/read_type_page.html"><i class="material-icons">verified_user</i>Tipos</a></li>
+        <li><a href="../users/read_user_page.html"><i class="material-icons">account_circle</i>Usuarios</a></li>        
+      </ul>
+      
+      <!-- lista desplegable registro MOVIL -->
+      <ul id='dropdown_registro_movil' class='dropdown-content'>
+        <li><a href="../types/create_type_page.html"><i class="material-icons">verified_user</i>Tipos</a></li>
+        <li><a href="../users/create_user_page.html"><i class="material-icons">account_circle</i>Usuarios</a></li>        
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+<!-- FIN DEL MENÚ -->
+
+
+<!-- INICIO DEL CUERPO -->
+
+<div class="section">
+    <div class="row">
+      <br>
+      <div class="row center">
+        <h3 class="header center black-text">Tipos de usuarios</h3>
+        <table class="striped card responsive-table">
+            <thead>
+              <tr>
+                  <th>ID</th>
+                  <th>Tipo de usuario</th>
+                  <th class="center">Acciones</th>
+              </tr>
+            </thead>
+    
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Administrador</td>
+                <td class="center">
+                    <a href="#" class="black-text"><i title="Editar" class="material-icons">create</i></a>
+                    <a href="#" class="black-text"><i title="Ver" class="material-icons">remove_red_eye</i></a>
+                    <a href="#" class="black-text"><i title="Eliminar" class="material-icons">delete</i></a>
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Administrador</td>
+                <td class="center">
+                    <a href="#" class="black-text"><i title="Editar" class="material-icons">create</i></a>
+                    <a href="#" class="black-text"><i title="Ver" class="material-icons">remove_red_eye</i></a>
+                    <a href="#" class="black-text"><i title="Eliminar" class="material-icons">delete</i></a>
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Administrador</td>
+                <td class="center">
+                    <a href="#" class="black-text"><i title="Editar" class="material-icons">create</i></a>
+                    <a href="#" class="black-text"><i title="Ver" class="material-icons">remove_red_eye</i></a>
+                    <a href="#" class="black-text"><i title="Eliminar" class="material-icons">delete</i></a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+      
+      <br><br>
+
+    </div>
+  </div>
+<!-- FIN DEL CUERPO -->
+
+<!-- PIE -->
+
+<footer class="page-footer purple darken-4">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Proyecto Desarrollo web 2021</h5>
+          <p class="grey-text text-lighten-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem cumque totam eaque laboriosam ea maiores! Placeat cum, aliquam excepturi maiores eligendi asperiores dolore libero vero ipsam cupiditate quam impedit dolores.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Integrantes</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Nombres completos 1</a></li>
+            <li><a class="white-text" href="#!">Nombres completos 2</a></li>
+            <li><a class="white-text" href="#!">Nombres completos 3</a></li>
+            <li><a class="white-text" href="#!">Nombres completos 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Contactos</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Email 1</a></li>
+            <li><a class="white-text" href="#!">Email 2</a></li>
+            <li><a class="white-text" href="#!">Email 3</a></li>
+            <li><a class="white-text" href="#!">Email 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Facilitador <a target="_blank" class="black-text" href="https://www.youtube.com/channel/UCdCd9f4XTh2sle8P3oT_xYg">Armando Sánchez Trabajando</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/materialize.js"></script>
+  <script src="../../js/init.js"></script>
+
+  </body>
+</html>
