@@ -1,1 +1,7 @@
-# sisautentificacionwithtokenemailPHP
+# PROYECTO DE CATEDRA DESARROLLO WEB ULS
+
+## TECNOLOGIAS UTILIZADAS 🚀
+_PHP
+Mysql
+Patron MVC
+DOMPDF._
